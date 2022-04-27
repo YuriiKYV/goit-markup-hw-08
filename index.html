@@ -30,33 +30,71 @@
                         <a class="menu__link link" href="">Контакты</a>
                     </li>
                 </ul>
-            </nav>
-            <ul class="contact-title list">
-                <li class="contact-title__item">
-                    <a class="contact-title__link link"
+            </nav> 
+            <button class="mobile-mune-btn" type="button" data-menu-open>
+                <svg class="mobile-menu-btn__icon" width="40" height="40">
+                    <use href="./images/icons.svg#burger-menu-icon"></use>
+                </svg>
+            </button>
+            <ul class="contact-header list">
+                <li class="contact-header__item">
+                    <a class="contact-header__link link"
                         href="mailto:info@devstudio.com">
-                        <svg class="contact-title__icon" width="16" height="12" >
+                        <svg class="contact-header__icon" width="16" height="12" >
                             <use href="./images/icons.svg#envelope"></use>
                         </svg>
                         info@devstudio.com</a></li>
-                <li class="contact-title__item">
-                    <a class="contact-title__link link" href="tel:+380961111111">
-                        <svg class="contact-title__icon" width="10" height="16">
+                <li class="contact-header__item">
+                    <a class="contact-header__link link" href="tel:+380961111111">
+                        <svg class="contact-header__icon" width="10" height="16">
                             <use href="./images/icons.svg#smartphone"></use>
                         </svg>
                         +38 096 111 11 11</a>
                 </li>
             </ul>
         </div>
+        <div class="mobile-menu is-open" data-menu>
+            <div class="container mobile-menu__container">
+                <button class="mobile-menu__close-btn" type="button" data-menu-close>
+                    <svg class="mobile-menu__close-icon" width="40" height="40">
+                        <use href="./images/icons.svg#close-menu-icon"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-navigation list">
+                    <li class="mobile-navigation__item">
+                        <a class="mobile-navigation__link link" href="">Студия</a></li>
+                    <li class="mobile-navigation__item">
+                        <a class="mobile-navigation__link link" href="">Портфолио</a></li>
+                    <li class="mobile-navigation__item">
+                        <a class="mobile-navigation__link link" href="">Контакты</a></li>
+                </ul>
+                <ul class="mobile-menu-contact list">
+                    <li class="mobile-menu-contact__item">
+                        <a class="mobile-menu-contact__tel link" href="">+38 096 111 11 11</a></li>
+                    <li class="mobile-menu-contact__item">
+                        <a class="mobile-menu-contact__mail link" href="">info@devstudio.com</a></li>
+                </ul>
+                <ul class="mobile-menu-social list">
+                    <li class="mobile-menu-social__item">
+                        <a class="mobile-menu-social__link link" href="">Instagram</a></li>
+                    <li class="mobile-menu-social__item">
+                        <a class="mobile-menu-social__link link" href="">Twitter</a></li>
+                    <li class="mobile-menu-social__item">
+                        <a class="mobile-menu-social__link link" href="">Facebook</a></li>
+                    <li class="mobile-menu-social__item">
+                        <a class="mobile-menu-social__link link" href="">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
     <main>
-        <section class="hero section">
+        <!-- <section class="hero section">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения<br> для вашего бизнеса</h1>
                 <button class="modal-btn hero__modal-btn" type="button" data-modal-open>Заказать услугу</button>
             </div>
-        </section>
-        <section class="about section">
+        </section> -->
+        <!-- <section class="about section">
             <div class="container">
                 <ul class="about-list list">
                     <li class="about-list__item">
@@ -101,8 +139,8 @@
                     </li>
                 </ul>
             </div>
-        </section>
-        <section class="specificity section">
+        </section> -->
+        <!-- <section class="specificity section">
             <div class="container">
                 <h2 class="specificity-title">Чем мы занимаемся</h2>
                 <ul class="specificity-list list">
@@ -120,8 +158,8 @@
                         </li>
                 </ul>
             </div>
-        </section>
-        <section class="team section">
+        </section> -->
+        <!-- <section class="team section">
             <div class="container">
                 <h2 class="team-title">Наша команда</h2>
                 <ul class="team-list list">
@@ -277,8 +315,8 @@
                     </li>
                 </ul>                           
             </div>
-        </section>
-        <section class="clients section">
+        </section> -->
+        <!-- <section class="clients section">
             <div class="container">
                 <h2 class="clients-title">Постоянные клиенты</h2>
                 <ul class="clients-list list">
@@ -326,9 +364,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
     </main>
-    <footer class="bottom">
+    <!-- <footer class="bottom">
         <div class="container-bottom container">
             <div class="container-left">
                 <a class="bottom-logo logo link" href="">Web<span class="bottom-logo-color">Studio</span></a>
@@ -393,7 +431,7 @@
                 </div>
             </form>
         </div>
-    </footer>
+    </footer> -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>
@@ -437,6 +475,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
 
