@@ -56,11 +56,6 @@ img {
   text-decoration: none;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -511,7 +506,7 @@ img {
     align-items: center;
     font-weight: 500;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -555,8 +550,12 @@ img {
     margin-right: 30px;
   }
   .contact-header__link {
+    font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .contact-header__link:focus, .contact-header__link:hover {
     color: var(--primary-accent-color);
@@ -575,25 +574,24 @@ img {
 }
 
 .hero {
-  max-width: 1600px;
-  height: 600px;
+  max-width: 480px;
+  max-height: 480px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-hero-Img.jpg);
+  text-align: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/background-hero-mobile-Img.jpg);
   background-size: cover;
   background-position: center;
   background-color: #c4c4c4;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  text-align: center;
 }
 
 .hero-title {
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
+  font-size: 26px;
+  line-height: 1.6;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--secondary-accent-color);

@@ -1,31 +1,68 @@
 .hero {
-    max-width: 1600px;
-    height: 600px;
+    max-width: 480px;
+    max-height: 480px;
     margin-left: auto;
     margin-right: auto;
+
+    text-align: center;
+    padding-top: 118px;
+    padding-bottom: 118px;
+
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url(../images/background-hero-Img.jpg);
+        url(/images/background-hero-mobile-Img.jpg);
+    
     background-size: cover;
     background-position: center;
     background-color: #c4c4c4;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    text-align: center;
 }
-
 .hero-title {
     margin-bottom: 30px;
-    
-    @include font-title (900, 44px, 1.36);
-    text-align: center;
+
+    @include font-title (900, 26px, 1.6);
     letter-spacing: 0.06em;
     text-transform: uppercase;
-
+    
     color: var(--secondary-accent-color);
+
+
 }
 
 .hero__modal-btn {
     justify-content: center;
     padding: 10px 32px;
 }
+
+
+
+// .hero {
+//     max-width: 1600px;
+//     height: 600px;
+//     margin-left: auto;
+//     margin-right: auto;
+//     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+//             rgba(47, 48, 58, 0.4)),
+//         url(../images/background-hero-Img.jpg);
+//     background-size: cover;
+//     background-position: center;
+//     background-color: #c4c4c4;
+//     padding-top: 200px;
+//     padding-bottom: 200px;
+//     text-align: center;
+// }
+
+// .hero-title {
+//     margin-bottom: 30px;
+    
+//     @include font-title (900, 44px, 1.36);
+//     text-align: center;
+//     letter-spacing: 0.06em;
+//     text-transform: uppercase;
+
+//     color: var(--secondary-accent-color);
+// }
+
+// .hero__modal-btn {
+//     justify-content: center;
+//     padding: 10px 32px;
+// }
