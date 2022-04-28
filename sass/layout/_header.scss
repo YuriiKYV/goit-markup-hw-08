@@ -1,25 +1,10 @@
-.heading {
-    position: relative;
-}
-
-.menu {
-    display: none;
-}
-
-.contact-header {
-    display: none;
-}
-
-.heading__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navigation__logo {
+.heading__logo {
     display: block;
     padding-top: 16px;
     padding-bottom: 16px;
+
+    font-size: 24px;
+    line-height: 1.17;
 }
 
 .title-logo-color {
@@ -27,18 +12,169 @@
 
 }
 
-.mobile-mune-btn {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    line-height: 0;
+// 0-767
+@media screen and (max-width: 767px) {
+    .heading {
+        position: relative;
+    }
+    
+    .heading__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .menu {
+        display: none;
+    }
+    
+    .contact-header {
+        display: none;
+    }
+    
+    
+    .mobile-mune-btn {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        line-height: 0;
+    
+        fill: #000000;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover,
+        &:focus {
+            fill: var(--primary-accent-color);
+        }
+    }
+}
 
-    fill: #000000;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// 768 + 
+@media screen and (min-width: 768px) {
+    .mobile-mune-btn {
+        display: none;
+    }
 
-    &:hover,
-    &:focus {
-        fill: var(--primary-accent-color);
+    .mobile-menu {
+        display: none;
+    }
+
+    .heading__logo {
+        padding-top: 26px;
+        padding-bottom: 26px;
+        margin-right: 88px;
+    }
+
+    .heading__container {
+        display: flex;
+        align-items: center;
+    }
+
+    .navigation {
+        display: flex;
+        margin-right: auto;
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu__item:not(:last-child) {
+        margin-right: 50px;
+    }
+
+    .menu__link {
+        display: block;
+        position: relative;
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+        @include navigation-title (14px, 1.14);
+    }
+
+    
+
+    .contact-header__link {
+        display: flex;
+        align-items: center;
+
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.02em;
+        
+        color: var(--secondary-text-color);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .contact-header__icon-envelope {
+        width: 14px;
+        height: 10px;
+
+        fill: currentColor;
+        margin-right: 8px;
+    }
+    .contact-header__icon-smartphone {
+        width: 10px;
+        height: 14px;
+        
+        fill: currentColor;
+        margin-right: 8px;
+    }
+}
+
+//768 - 1199
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .contact-header__item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .heading__logo {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        margin-right: 93px;
+    
+        font-size: 26px;
+        line-height: 1.19;
+    }
+
+    .menu__link:focus,
+    .menu__link:hover {
+        color: var(--primary-accent-color);
+    }
+
+    .contact-header {
+        display: flex;
+    }
+
+    .contact-header__item:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    .contact-header__link {
+        font-size: 14px;
+        line-height: 1.14;
+        &:focus,
+        &:hover {
+            color: var(--primary-accent-color);
+        }
+    }
+
+    .contact-header__icon-envelope {
+        width: 16px;
+        height: 12px;
+    
+        fill: currentColor;
+        margin-right: 10px;
+    }
+    .contact-header__icon-smartphone {
+        height: 16px;
+    
+        fill: currentColor;
+        margin-right: 10px;
     }
 }
 
@@ -73,7 +209,7 @@
 //     margin-right: 50px;
 // }
 
-// .navigation__logo {
+// .heading__logo {
 //     margin-right: 93px;
 //     padding-top: 24px;
 //     padding-bottom: 24px;
