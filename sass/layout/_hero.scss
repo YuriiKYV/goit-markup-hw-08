@@ -1,6 +1,6 @@
 .hero {
     max-width: 480px;
-    max-height: 480px;
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
 
@@ -10,12 +10,22 @@
 
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url(../images/background-hero-mobile-Img.jpg);
-    
+        url("../../images/background-hero-mobile-Img.jpg");
     background-size: cover;
     background-position: center;
     background-color: #c4c4c4;
 }
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url("../../images/background-hero-mobile-Img-2x.jpg");
+    }
+}
+
 .hero-title {
     margin-bottom: 30px;
 
