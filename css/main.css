@@ -56,6 +56,20 @@ img {
   text-decoration: none;
 }
 
+@media screen and (max-width: 1199px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -645,24 +659,19 @@ img {
   }
 }
 
-.about-list {
-  display: flex;
-  flex-wrap: wrap;
+.about {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about-list__item {
-  width: 270px;
-}
-
-.about-list__item:not(:nth-child(4n)) {
-  margin-right: 30px;
+  width: 100%;
 }
 
 .about-list__container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
   height: 120px;
   margin-bottom: 30px;
   background: var(--secondary-background-color);
@@ -684,48 +693,44 @@ img {
   color: var(--secondary-text-color);
 }
 
-.specificity {
+@media screen and (max-width: 767px) {
+  .about-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .about-list__title {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  .about-list__item {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-list__item {
+    width: calc((100% - 4 * 30px) / 4);
+  }
+}
+
+.directions {
   padding-top: 0px;
 }
 
-.specificity-title {
-  margin-bottom: 50px;
+.directions__title {
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-}
-
-.specificity-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.specificity-card {
-  width: 370px;
-  position: relative;
-}
-
-.specificity-card:not(:nth-child(3n)) {
-  margin-right: 30px;
-}
-
-.specificity-description {
-  display: flex;
-  position: absolute;
-  bottom: 0;
-  color: var(--secondary-accent-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  background: rgba(47, 48, 58, 0.8);
-  width: 100%;
-  height: 70px;
-  align-items: center;
-  justify-content: center;
 }
 
 .team {
