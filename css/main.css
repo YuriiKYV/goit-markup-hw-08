@@ -720,17 +720,51 @@ img {
   }
 }
 
-.directions {
-  padding-top: 0px;
+@media screen and (max-width: 1199px) {
+  .directions {
+    display: none;
+  }
 }
 
-.directions__title {
-  margin-bottom: 30px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
+@media screen and (min-width: 1200px) {
+  .directions {
+    padding-top: 0;
+  }
+  .directions-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .directions__title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+  .directions-list__card {
+    width: 370px;
+    position: relative;
+  }
+  .directions-list__card:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+  .directions-list__description {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary-accent-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    background: rgba(47, 48, 58, 0.8);
+  }
 }
 
 .team {
