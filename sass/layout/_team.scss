@@ -34,8 +34,6 @@
 .team-list__wrapper {
     padding-top: 30px;
     padding-bottom: 24px;
-    padding-left: 122px;
-    padding-right: 122px;
 }
 
 .team-list__worker {
@@ -57,6 +55,9 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    padding-left: 122px;
+    padding-right: 122px;
 }
 
 .social-list__link {
@@ -87,7 +88,7 @@
         margin: 15px;
     }
 
-    .team-list__wrapper {
+    .social-list {
         padding-left: 74px;
         padding-right: 74px;
     }
@@ -99,8 +100,6 @@
     }
     
     .team-list__wrapper {
-        padding-left: 32px;
-        padding-right: 32px;
         padding-bottom: 30px;
     }
     
@@ -114,5 +113,10 @@
     .social-list__link:focus {
         fill: var(--secondary-accent-color);
         background-color: var(--primary-accent-color);
+    }
+
+    .social-list {
+        padding-left: 32px;
+        padding-right: 32px;
     }
 }
