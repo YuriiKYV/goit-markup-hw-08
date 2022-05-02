@@ -165,9 +165,6 @@ img {
 
 .modal {
   position: relative;
-  max-width: 450px;
-  width: 100%;
-  min-height: 609px;
   background-color: var(--secondary-accent-color);
 }
 
@@ -357,7 +354,7 @@ img {
   }
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 480px) {
   .contact-form__checkbox-label {
     justify-content: center;
     display: flex;
@@ -371,9 +368,24 @@ img {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1199px) {
+  .modal {
+    max-width: 450px;
+    width: 100%;
+    min-height: 609px;
+  }
+}
+
+@media screen and (max-width: 479px) {
   .backdrop {
     padding: 94px 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
   }
 }
 
