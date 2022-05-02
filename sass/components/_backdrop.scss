@@ -92,7 +92,7 @@
     }
 }
 
-.contact-form-icon {
+.contact-form__icon {
     position: absolute;
     top: 50%;
     left: 12px;
@@ -251,5 +251,10 @@
     .modal {
         width: 528px;
         height: 581px;
+    }
+
+    .contact-form__checkbox-label {
+        font-size: 14px;
+        line-height: 1.71;
     }
 }

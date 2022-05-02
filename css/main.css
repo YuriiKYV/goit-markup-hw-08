@@ -234,7 +234,7 @@ img {
   border-color: var(--primary-accent-color);
 }
 
-.contact-form-icon {
+.contact-form__icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -242,7 +242,7 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-form-inpunt:focus + .contact-form-icon {
+.contact-form-inpunt:focus + .contact-form__icon {
   fill: var(--primary-accent-color);
 }
 
@@ -386,6 +386,10 @@ img {
   .modal {
     width: 528px;
     height: 581px;
+  }
+  .contact-form__checkbox-label {
+    font-size: 14px;
+    line-height: 1.71;
   }
 }
 
