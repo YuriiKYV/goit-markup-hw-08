@@ -100,208 +100,469 @@
         </div>
     </header>
     <main>
-        <!-- <section class="portfolio section">
+        <section class="portfolio section">
             <div class="container">
                 <ul class="filter-list list">
-                    <li class="filter-item"><button class="filter-list-button first" type="button">Все</button></li>
-                    <li class="filter-item"><button class="filter-list-button" type="button">Веб-сайты</button></li>
-                    <li class="filter-item"><button class="filter-list-button" type="button">Приложения</button></li>
-                    <li class="filter-item"><button class="filter-list-button" type="button">Дизайн</button></li>
-                    <li class="filter-item"><button class="filter-list-button" type="button">Маркетинг</button></li>
+                    <li class="filter-list__item"><button class="filter-list__button first" type="button">Все</button></li>
+                    <li class="filter-list__item"><button class="filter-list__button" type="button">Веб-сайты</button></li>
+                    <li class="filter-list__item"><button class="filter-list__button" type="button">Приложения</button></li>
+                    <li class="filter-list__item"><button class="filter-list__button" type="button">Дизайн</button></li>
+                    <li class="filter-list__item"><button class="filter-list__button" type="button">Маркетинг</button></li>
                 </ul>
                 <ul class="portfolio-list list">
-                    <li class="portfolio-item">
-                        <a href="" class="portfolio-link link">
-                            <div class="portfolio-link-wrapper">
-                                <img class="portfolio-list-photo" src="./images/examples-img-1.jpg" alt="Фото работ" width="370" height="294">
-                                <p class="portfolio-overlay">
+                    <li class="portfolio-list__item">
+                        <a href="" class="portfolio-list__link link">
+                            <div class="portfolio-list__link-wrapper">
+                                <picture>
+                                    <source 
+                                    srcset="./images/examples-1.webp 1x, ./images/examples-1-2x.webp 2x" 
+                                    media="(min-width: 1200px)" 
+                                    type="image/webp"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-1.jpg 1x, ./images/examples-1-2x.jpg 2x" 
+                                    media="(min-width: 1200px)"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-1-tablet.webp 1x, ./images/examples-1-tablet-2x.webp 2x" 
+                                    media="(min-width: 768px)"
+                                        type="image/webp">
+                                    <source 
+                                    srcset="./images/examples-1-tablet.jpg 1x, ./images/examples-1-tablet-2x.jpg 2x" 
+                                    media="(min-width: 768px)"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-1-mobile.webp 1x, ./images/examples-1-mobile-2x.webp 2x" 
+                                    media="(max-width: 767px)"
+                                    type="image/webp"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-1-mobile.jpg 1x, ./images/examples-1-mobile-2x.jpg 2x" 
+                                    media="(max-width: 767px)"
+                                    >
+                                    <img class="portfolio-list__photo" src="./images/examples-1.jpg" alt="Фото работ">
+                                </picture>
+                                <p class="portfolio-list__overlay">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                     получить
                                     исчерпывающие сведения о компании или частном лице.
                                 </p>
                             </div>
-                            <div class="portfolio-item-wrapper">
-                                <h3 class="portfolio-list-title">Технокряк</h3>
-                                <p class="portfolio-list-description">Веб-сайт</p>
+                            <div class="portfolio-list__item-wrapper">
+                                <h3 class="portfolio-list__title">Технокряк</h3>
+                                <p class="portfolio-list__description">Веб-сайт</p>
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio-item">
-                        <a href="" class="portfolio-link link">
-                            <div class="portfolio-link-wrapper">
-                                <img class="portfolio-list-photo" src="./images/examples-img-2.jpg" alt="Фото работ" width="370" height="294">
-                                <p class="portfolio-overlay">
+                    <li class="portfolio-list__item">
+                        <a href="" class="portfolio-list__link link">
+                            <div class="portfolio-list__link-wrapper">
+                                <picture>
+                                    <source 
+                                    srcset="./images/examples-2.webp 1x, ./images/examples-2-2x.webp 2x" 
+                                    media="(min-width: 1200px)"
+                                    type="image/webp"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-2.jpg 1x, ./images/examples-2-2x.jpg 2x" 
+                                    media="(min-width: 1200px)"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-2-tablet.webp 1x, ./images/examples-2-tablet-2x.webp 2x" 
+                                    media="(min-width: 768px)"
+                                    type="image/webp"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-2-tablet.jpg 1x, ./images/examples-2-tablet-2x.jpg 2x" 
+                                    media="(min-width: 768px)"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-2-mobile.webp 1x, ./images/examples-2-mobile-2x.webp 2x" 
+                                    media="(max-width: 767px)"
+                                    type="image/webp"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-2-mobile.jpg 1x, ./images/examples-2-mobile-2x.jpg 2x" 
+                                    media="(max-width: 767px)"
+                                    >
+                                    <img class="portfolio-list__photo" src="./images/examples-2.jpg" alt="Фото работ">
+                                </picture>
+                                <p class="portfolio-list__overlay">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                     получить
                                     исчерпывающие сведения о компании или частном лице.
                                 </p> 
                             </div>
-                            <div class="portfolio-item-wrapper">
-                                <h3 class="portfolio-list-title">Постер New Orlean vs Golden Star</h3>
-                                <p class="portfolio-list-description">Дизайн</p>
+                            <div class="portfolio-list__item-wrapper">
+                                <h3 class="portfolio-list__title">Постер New Orlean vs Golden Star</h3>
+                                <p class="portfolio-list__description">Дизайн</p>
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio-item">
-                        <a href="" class="portfolio-link link">
-                            <div class="portfolio-link-wrapper">
-                                <img class="portfolio-list-photo" src="./images/examples-img-3.jpg" alt="Фото работ" width="370" height="294">
-                                <p class="portfolio-overlay">
+                    <li class="portfolio-list__item">
+                        <a href="" class="portfolio-list__link link">
+                            <div class="portfolio-list__link-wrapper">
+                                <picture>
+                                    <source 
+                                    srcset="./images/examples-3.webp 1x, ./images/examples-3-2x.webp 2x" 
+                                    media="(min-width: 1200px)"
+                                    type="image/webp"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-3.jpg 1x, ./images/examples-3-2x.jpg 2x" 
+                                    media="(min-width: 1200px)"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-3-tablet.webp 1x, ./images/examples-3-tablet-2x.webp 2x" 
+                                    media="(min-width: 768px)"
+                                    type="image/webp"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-3-tablet.jpg 1x, ./images/examples-3-tablet-2x.jpg 2x" 
+                                    media="(min-width: 768px)"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-3-mobile.webp 1x, ./images/examples-3-mobile-2x.webp 2x" 
+                                    media="(max-width: 767px)"
+                                    type="image/webp"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-3-mobile.jpg 1x, ./images/examples-3-mobile-2x.jpg 2x" 
+                                    media="(max-width: 767px)"
+                                    >
+                                    <img class="portfolio-list__photo" src="./images/examples-3.jpg" alt="Фото работ">
+                                </picture>
+                                <p class="portfolio-list__overlay">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                     получить
                                     исчерпывающие сведения о компании или частном лице.
                                 </p>
                             </div>
-                            <div class="portfolio-item-wrapper">
-                                <h3 class="portfolio-list-title">Ресторан Seafood</h3>
-                                <p class="portfolio-list-description">Приложение</p>
+                            <div class="portfolio-list__item-wrapper">
+                                <h3 class="portfolio-list__title">Ресторан Seafood</h3>
+                                <p class="portfolio-list__description">Приложение</p>
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio-item">
-                        <a href="" class="portfolio-link link">
-                            <div class="portfolio-link-wrapper">
-                                <img class="portfolio-list-photo" src="./images/examples-img-4.jpg" alt="Фото работ" width="370" height="294">
-                                <p class="portfolio-overlay">
+                    <li class="portfolio-list__item">
+                        <a href="" class="portfolio-list__link link">
+                            <div class="portfolio-list__link-wrapper">
+                                <picture>
+                                    <source 
+                                    srcset="./images/examples-4.webp 1x, ./images/examples-4-2x.webp 2x" 
+                                    media="(min-width: 1200px)"
+                                    type="image/webp"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-4.jpg 1x, ./images/examples-4-2x.jpg 2x" 
+                                    media="(min-width: 1200px)"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-4-tablet.webp 1x, ./images/examples-4-tablet-2x.webp 2x" 
+                                    media="(min-width: 768px)"
+                                    type="image/webp"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-4-tablet.jpg 1x, ./images/examples-4-tablet-2x.jpg 2x" 
+                                    media="(min-width: 768px)"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-4-mobile.webp 1x, ./images/examples-4-mobile-2x.webp 2x" 
+                                    media="(max-width: 767px)"
+                                    type="image/webp"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-4-mobile.jpg 1x, ./images/examples-4-mobile-2x.jpg 2x" 
+                                    media="(max-width: 767px)"
+                                    >
+                                    <img class="portfolio-list__photo" src="./images/examples-4.jpg" alt="Фото работ">
+                                </picture>                               
+                                <p class="portfolio-list__overlay">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                     получить
                                     исчерпывающие сведения о компании или частном лице.
                                 </p>
                             </div>
-                            <div class="portfolio-item-wrapper">
-                                <h3 class="portfolio-list-title">Проект Prime</h3>
-                                <p class="portfolio-list-description">Маркетинг</p>
+                            <div class="portfolio-list__item-wrapper">
+                                <h3 class="portfolio-list__title">Проект Prime</h3>
+                                <p class="portfolio-list__description">Маркетинг</p>
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio-item">
-                        <a href="" class="portfolio-link link">
-                            <div class="portfolio-link-wrapper">
-                                <img class="portfolio-list-photo" src="./images/examples-img-5.jpg" alt="Фото работ" width="370" height="294">
-                                <p class="portfolio-overlay">
+                    <li class="portfolio-list__item">
+                        <a href="" class="portfolio-list__link link">
+                            <div class="portfolio-list__link-wrapper">
+                                <picture>
+                                    <source 
+                                    srcset="./images/examples-5.webp 1x, ./images/examples-5-2x.webp 2x" 
+                                    media="(min-width: 1200px)"
+                                    type="image/webp"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-5.jpg 1x, ./images/examples-5-2x.jpg 2x" 
+                                    media="(min-width: 1200px)"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-5-tablet.webp 1x, ./images/examples-5-tablet-2x.webp 2x" 
+                                    media="(min-width: 768px)"
+                                    type="image/webp"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-5-tablet.jpg 1x, ./images/examples-5-tablet-2x.jpg 2x" 
+                                    media="(min-width: 768px)"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-5-mobile.webp 1x, ./images/examples-5-mobile-2x.webp 2x" 
+                                    media="(max-width: 767px)"
+                                    type="image/webp"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-5-mobile.jpg 1x, ./images/examples-5-mobile-2x.jpg 2x" 
+                                    media="(max-width: 767px)"
+                                    >
+                                    <img class="portfolio-list__photo" src="./images/examples-5.jpg" alt="Фото работ">
+                                </picture>                               
+                                <p class="portfolio-list__overlay">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                     получить
                                     исчерпывающие сведения о компании или частном лице.
                                 </p>
                             </div>
-                            <div class="portfolio-item-wrapper">
-                                <h3 class="portfolio-list-title">Проект Boxes</h3>
-                                <p class="portfolio-list-description">Приложение</p>
+                            <div class="portfolio-list__item-wrapper">
+                                <h3 class="portfolio-list__title">Проект Boxes</h3>
+                                <p class="portfolio-list__description">Приложение</p>
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio-item">
-                        <a href="" class="portfolio-link link">
-                            <div class="portfolio-link-wrapper">
-                                <img class="portfolio-list-photo" src="./images/examples-img-6.jpg" alt="Фото работ" width="370" height="294">
-                                <p class="portfolio-overlay">
+                    <li class="portfolio-list__item">
+                        <a href="" class="portfolio-list__link link">
+                            <div class="portfolio-list__link-wrapper">
+                                <picture>
+                                    <source 
+                                    srcset="./images/examples-6.webp 1x, ./images/examples-6-2x.webp 2x" 
+                                    media="(min-width: 1200px)"
+                                    type="image/webp"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-6.jpg 1x, ./images/examples-6-2x.jpg 2x" 
+                                    media="(min-width: 1200px)"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-6-tablet.webp 1x, ./images/examples-6-tablet-2x.webp 2x" 
+                                    media="(min-width: 768px)"
+                                    type="image/webp"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-6-tablet.jpg 1x, ./images/examples-6-tablet-2x.jpg 2x" 
+                                    media="(min-width: 768px)"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-6-mobile.webp 1x, ./images/examples-6-mobile-2x.webp 2x" 
+                                    media="(max-width: 767px)"
+                                    type="image/webp"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-6-mobile.jpg 1x, ./images/examples-6-mobile-2x.jpg 2x" 
+                                    media="(max-width: 767px)"
+                                    >
+                                    <img class="portfolio-list__photo" src="./images/examples-6.jpg" alt="Фото работ">
+                                </picture>                               
+                                <p class="portfolio-list__overlay">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                     получить
                                     исчерпывающие сведения о компании или частном лице.
                                 </p>
                             </div>
-                            <div class="portfolio-item-wrapper">
-                                <h3 class="portfolio-list-title">Inspiration has no Borders</h3>
-                                <p class="portfolio-list-description">Веб-сайт</p>
+                            <div class="portfolio-list__item-wrapper">
+                                <h3 class="portfolio-list__title">Inspiration has no Borders</h3>
+                                <p class="portfolio-list__description">Веб-сайт</p>
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio-item">
-                        <a href="" class="portfolio-link link">
-                            <div class="portfolio-link-wrapper">
-                                <img class="portfolio-list-photo" src="./images/examples-img-7.jpg" alt="Фото работ" width="370" height="294">
-                                <p class="portfolio-overlay">
+                    <li class="portfolio-list__item">
+                        <a href="" class="portfolio-list__link link">
+                            <div class="portfolio-list__link-wrapper">
+                                <picture>
+                                    <source 
+                                    srcset="./images/examples-7.webp 1x, ./images/examples-7-2x.webp 2x" 
+                                    media="(min-width: 1200px)"
+                                    type="image/webp"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-7.jpg 1x, ./images/examples-7-2x.jpg 2x" 
+                                    media="(min-width: 1200px)"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-7-tablet.webp 1x, ./images/examples-7-tablet-2x.webp 2x" 
+                                    media="(min-width: 768px)"
+                                    type="image/webp"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-7-tablet.jpg 1x, ./images/examples-7-tablet-2x.jpg 2x" 
+                                    media="(min-width: 768px)"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-7-mobile.webp 1x, ./images/examples-7-mobile-2x.webp 2x" 
+                                    media="(max-width: 767px)"
+                                    type="image/webp"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-7-mobile.jpg 1x, ./images/examples-7-mobile-2x.jpg 2x" 
+                                    media="(max-width: 767px)"
+                                    >
+                                    <img class="portfolio-list__photo" src="./images/examples-7.jpg" alt="Фото работ">
+                                </picture>                                
+                                <p class="portfolio-list__overlay">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                     получить
                                     исчерпывающие сведения о компании или частном лице.
                                 </p>
                             </div>
-                            <div class="portfolio-item-wrapper">
-                                <h3 class="portfolio-list-title">Издание Limited Edition</h3>
-                                <p class="portfolio-list-description">Дизайн</p>
+                            <div class="portfolio-list__item-wrapper">
+                                <h3 class="portfolio-list__title">Издание Limited Edition</h3>
+                                <p class="portfolio-list__description">Дизайн</p>
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio-item">
-                        <a href="" class="portfolio-link link">
-                            <div class="portfolio-link-wrapper">
-                                <img class="portfolio-list-photo" src="./images/examples-img-8.jpg" alt="Фото работ" width="370" height="294">
-                                <p class="portfolio-overlay">
+                    <li class="portfolio-list__item">
+                        <a href="" class="portfolio-list__link link">
+                            <div class="portfolio-list__link-wrapper">
+                                <picture>
+                                    <source 
+                                    srcset="./images/examples-8.webp 1x, ./images/examples-8-2x.webp 2x" 
+                                    media="(min-width: 1200px)"
+                                    type="image/webp"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-8.jpg 1x, ./images/examples-8-2x.jpg 2x" 
+                                    media="(min-width: 1200px)"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-8-tablet.webp 1x, ./images/examples-8-tablet-2x.webp 2x" 
+                                    media="(min-width: 768px)"
+                                    type="image/webp"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-8-tablet.jpg 1x, ./images/examples-8-tablet-2x.jpg 2x" 
+                                    media="(min-width: 768px)"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-8-mobile.webp 1x, ./images/examples-8-mobile-2x.webp 2x" 
+                                    media="(max-width: 767px)"
+                                    type="image/webp"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-8-mobile.jpg 1x, ./images/examples-8-mobile-2x.jpg 2x" 
+                                    media="(max-width: 767px)"
+                                    >
+                                    <img class="portfolio-list__photo" src="./images/examples-8.jpg" alt="Фото работ">
+                                </picture>                                
+                                <p class="portfolio-list__overlay">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                     получить
                                     исчерпывающие сведения о компании или частном лице.
                                 </p>
                             </div>
-                            <div class="portfolio-item-wrapper">
-                                <h3 class="portfolio-list-title">Проект LAB</h3>
-                                <p class="portfolio-list-description">Маркетинг</p>
+                            <div class="portfolio-list__item-wrapper">
+                                <h3 class="portfolio-list__title">Проект LAB</h3>
+                                <p class="portfolio-list__description">Маркетинг</p>
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio-item">
-                        <a href="" class="portfolio-link link">
-                            <div class="portfolio-link-wrapper">
-                                <img class="portfolio-list-photo" src="./images/examples-img-9.jpg" alt="Фото работ" width="370" height="294">
-                                <p class="portfolio-overlay">
+                    <li class="portfolio-list__item">
+                        <a href="" class="portfolio-list__link link">
+                            <div class="portfolio-list__link-wrapper">
+                                <picture>
+                                    <source 
+                                    srcset="./images/examples-9.webp 1x, ./images/examples-9-2x.webp 2x" 
+                                    media="(min-width: 1200px)"
+                                    type="image/webp"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-9.jpg 1x, ./images/examples-9-2x.jpg 2x" 
+                                    media="(min-width: 1200px)"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-9-tablet.webp 1x, ./images/examples-9-tablet-2x.webp 2x" 
+                                    media="(min-width: 768px)"
+                                    type="image/webp"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-9-tablet.jpg 1x, ./images/examples-9-tablet-2x.jpg 2x" 
+                                    media="(min-width: 768px)"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-9-mobile.webp 1x, ./images/examples-9-mobile-2x.webp 2x" 
+                                    media="(max-width: 767px)"
+                                    type="image/webp"
+                                    >
+                                    <source 
+                                    srcset="./images/examples-9-mobile.jpg 1x, ./images/examples-9-mobile-2x.jpg 2x" 
+                                    media="(max-width: 767px)"
+                                    >
+                                    <img class="portfolio-list__photo" src="./images/examples-9.jpg" alt="Фото работ">
+                                </picture>                                
+                                <p class="portfolio-list__overlay">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                     получить
                                     исчерпывающие сведения о компании или частном лице.
                                 </p>
                             </div>
-                            <div class="portfolio-item-wrapper">
-                                <h3 class="portfolio-list-title">Growing Business</h3>
-                                <p class="portfolio-list-description">Приложение</p>
+                            <div class="portfolio-list__item-wrapper">
+                                <h3 class="portfolio-list__title">Growing Business</h3>
+                                <p class="portfolio-list__description">Приложение</p>
                             </div>
                         </a>
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
     </main>
-    <!-- <footer class="bottom">
+    <footer class="bottom">
         <div class="container-bottom container">
-            <div class="container-left">
-                <a class="bottom-logo logo link" href="">Web<span class="bottom-logo-color">Studio</span></a>
+            <div class="bottom-wrapper">
+                <a class="bottom-wrapper__logo logo link" href="">Web<span
+                        class="bottom-wrapper__logo--color">Studio</span></a>
                 <address class="bottom-contact">
-                    <ul class="bottom-contact-list list">
-                        <li class="bottom-contact-item">
-                            <a class="bottom-contact-list-address link" href="">г. Киев, пр-т Леси Украинки, 26</a>
+                    <ul class="bottom-contact__list list">
+                        <li class="bottom-contact__item">
+                            <a class="bottom-contact__link-address link" href="">г. Киев, пр-т Леси Украинки, 26</a>
                         </li>
-                        <li class="bottom-contact-item">
-                            <a class="bottom-contact-list-link link" href="mailto:info@example.com">info@example.com</a>
+                        <li class="bottom-contact__item">
+                            <a class="bottom-contact__link link" href="mailto:info@example.com">info@example.com</a>
                         </li>
-                        <li class="bottom-contact-item">
-                            <a class="bottom-contact-list-link link" href="tel:+380991111111">+38 099 111 11 11</a>
+                        <li class="bottom-contact__item">
+                            <a class="bottom-contact__link link" href="tel:+380991111111">+38 099 111 11 11</a>
                         </li>
                     </ul>
                 </address>
             </div>
             <div class="container-join">
                 <p class="bottom-title">присоединяйтесь</p>
-                <ul class="bottom-social-list list">
-                    <li class="bottom-social-item">
-                        <a class="bottom-social-list-link social-icons" href="">
+                <ul class="bottom-social__list list">
+                    <li class="bottom-social__item">
+                        <a class="bottom-social__link social-icons" href="">
                             <svg width="20" height="20">
                                 <use href="./images/icons.svg#instagram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="bottom-social-item">
-                        <a class="bottom-social-list-link social-icons" href="">
+                    <li class="bottom-social__item">
+                        <a class="bottom-social__link social-icons" href="">
                             <svg width="20" height="20">
                                 <use href="./images/icons.svg#twitter"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="bottom-social-item">
-                        <a class="bottom-social-list-link social-icons" href="">
+                    <li class="bottom-social__item">
+                        <a class="bottom-social__link social-icons" href="">
                             <svg width="20" height="20">
                                 <use href="./images/icons.svg#facebook"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="bottom-social-item">
-                        <a class="bottom-social-list-link social-icons" href="">
+                    <li class="bottom-social__item">
+                        <a class="bottom-social__link social-icons" href="">
                             <svg width="20" height="20">
                                 <use href="./images/icons.svg#linkedin"></use>
                             </svg>
@@ -310,12 +571,12 @@
                 </ul>
             </div>
             <form class="subscription-form">
-                <p class="subscription-title">подпишитесь на рассылку</p>
-                <div class="subscription-container">
+                <p class="subscription-form__title">подпишитесь на рассылку</p>
+                <div class="subscription-form__container">
                     <label for="mail">
-                        <input class="subscription-form-input" name="email" placeholder="E-mail" type="email" id="mail">
+                        <input class="subscription-form__input" name="email" placeholder="E-mail" type="email" id="mail">
                     </label>
-                    <button class="subscription-form-submit modal-btn" type="submit">Подписаться
+                    <button class="subscription-form__submit modal-btn" type="submit">Подписаться
                         <svg class="subscription-form-icon" width="24" height="24">
                             <use href="./images/icons.svg#icon-send"></use>
                         </svg>
@@ -323,7 +584,7 @@
                 </div>
             </form>
         </div>
-    </footer> -->
+    </footer>
     <script src="./js/menu.js"></script>
     </body>
     </html>
