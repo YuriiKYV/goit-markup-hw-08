@@ -411,7 +411,6 @@ img {
     background-color: #FFFFFF;
     width: 100%;
     height: 100vh;
-    overflow: auto;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -427,6 +426,7 @@ img {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    overflow-y: scroll;
     padding-top: 48px;
     padding-bottom: 48px;
     padding-left: 40px;
