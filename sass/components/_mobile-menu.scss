@@ -23,9 +23,10 @@
     }
     
     .mobile-menu__container {
-        position: relative;
+        position: absolute;
         display: flex;
         flex-direction: column;
+        width: 100%;
         height: 100vh;
 
         overflow-y: scroll;
@@ -64,7 +65,12 @@
     }
     
     .mobile-navigation__link {
-        @include navigation-title (40px, 1.18)
+        @include navigation-title (40px, 1.18);
+        
+        &:focus,
+        &:hover {
+            color: var(--primary-accent-color);
+        }
     }
     
     .mobile-navigation__link.current {
